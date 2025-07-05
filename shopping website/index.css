@@ -1,0 +1,784 @@
+*{
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  background-color: hsl(0, 1%, 1%, 0.2);
+  position: fixed;
+  width: 100%;
+}
+.navContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  height: 80px;
+  align-items: center;
+  margin: auto;
+  color: white;
+}
+.navContainer .navLinks{
+  display: flex;
+}
+.navContainer .navLinks li{
+  padding: 0px 20px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.navContainer .navLinks li:hover{
+    text-decoration: underline;
+}
+.navContainer .logo{
+  display: flex;
+  align-items: center;
+}
+.logo h1{
+  font-size: 50px;
+  font-family: cursive;
+  font-weight: bold;
+}
+#homePage a{
+  font-size: 60px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.navContainer .logo a{
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  margin-left: -20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navContainer .cartIcon a{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.navContainer .cartIcon ul{
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.navContainer .cartIcon li{
+  padding: 0px 15px;
+  text-transform: uppercase;
+}
+.cartIcon .fa-bag-shopping{
+  margin-left: 15px;
+  margin-right: 20px;
+}
+@media (max-width: 950px) {
+  .logo h1{
+    font-size: 40px;
+  }
+  .navContainer .logo a{
+    font-size: 12px;
+  }
+  .navContainer .cartIcon a{
+    font-size: 12px;
+  }
+}
+
+.SNtext{
+  position: absolute;
+  top: 12pc;
+  left: 14pc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+.SNtext h1{
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.SNtext .shopNow{
+  padding: 8px 22px;
+  background-color: white;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.SNtext .shopNow:hover{
+  scale: 1.1;
+}
+.SNtext .findMore{
+  padding: 8px 22px;
+  background-color: transparent;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.SNtext .findMore:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(255, 255, 255);
+}
+@media (max-width: 1470px){
+  .SNtext h1{
+    font-size: 50px;
+  }
+  .SNtext h3{
+    font-size: 15px;
+  }
+}
+@media (max-width: 1200px) {
+  .SNtext{
+    position: absolute;
+    top: 8pc;
+  }
+  .SNtext h1{
+    font-size: 40px;
+  }
+}
+@media (max-width: 1050px) {
+  .SNtext{
+    position: absolute;
+    top: 5pc;
+    left: 5pc;
+  }
+  .SNtext .shopNow{
+    padding: 6px 20px;
+  }
+  .SNtext .findMore{
+    padding: 6px 20px;
+  }
+}
+
+.iconsName{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.iconsName div{
+  display: flex;
+  align-items: center;
+}
+.iconsName i{
+  margin-right: 4px;
+  font-size: 20px;
+}
+.iconsName h3{
+  margin-left: 10px;
+  font-size: 18px;
+}
+@media (max-width: 1470px){
+  .iconsName i{
+    font-size: 18px;
+  }
+  .iconsName h3{
+    font-size: 17px;
+  }
+}
+@media (max-width: 1200px){
+  .iconsName i{
+    font-size: 16px;
+  }
+  .iconsName h3{
+    font-size: 15px;
+  }
+}
+@media (max-width: 950px){
+  .iconsName{
+    width: 85%;
+  }
+}
+
+.shopNowContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  margin-bottom: -350px;
+}
+.shopContent{
+  width: 300px;
+}
+.shopNowContainer img{
+  width: 300px;
+  height: 370px;
+}
+.shopNowContainer .shopNowText{
+  position: relative;
+  color: white;
+  background-color: hsl(0, 0%, 1%, 0.4);
+  width: 300px;
+  height: 370px;
+  top: -24.4pc;
+  transition: all 0.5s;
+}
+.shopNowText h2{
+  padding-top: 14pc;
+  padding-left: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+.shopNowText p{
+  margin-left: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+}
+.shopNowText button{
+  padding: 6px 14px;
+  margin-left: 10px;
+  border: none;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+@media (max-width: 1700px){
+  .shopNowContainer{
+    margin-bottom: -310px;
+  }
+  .shopNowContainer img{
+    width: 250px;
+    height: 310px;
+  }
+  .shopNowContainer .shopNowText{
+    position: relative;
+    width: 250px;
+    height: 310px;
+    top: -20.5pc;
+  }
+  .shopNowText h2{
+    font-size: 16px;
+    padding-top: 12pc;
+  }
+  .shopNowText p{
+    font-size: 12px;
+  }
+  .shopNowText button{
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+}
+.shopNowContainer .shopNowText:hover{
+    background-color: hsl(0, 0%, 1%, 0.2);
+}
+@media (max-width: 1470px){
+  .shopNowContainer{
+    width: 80%;
+  }
+}
+@media (max-width: 1100px){
+  .shopNowContainer{
+    width: 85%;
+  }
+}
+@media (max-width: 950px){
+  .shopNowContainer{
+    width: 80%;
+    margin-bottom: -230px;
+  }
+  .shopNowContainer img{
+    width: 200px;
+    height: 260px;
+  }
+  .shopNowContainer .shopNowText{
+    position: relative;
+    width: 200px;
+    height: 260px;
+    top: -17.4pc;
+  }
+  .shopNowText h2{
+    font-size: 16px;
+    padding-top: 10pc;
+  }
+  .shopNowText p{
+    font-size: 12px;
+  }
+  .shopNowText button{
+    padding: 8px 15px;
+    font-size: 10px;
+    margin-left: -2px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+  }
+}
+
+.productContainerText{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.productContainerText h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+.productContainerText h2{
+  border-bottom: 2px solid rgb(0, 195, 255);
+  width: 6%;
+  margin: auto;
+}
+
+.productContainer img{
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 0px 10px hsl(0, 0%, 89%);
+  transition: all 0.3s;
+}
+.productContainer img:hover{
+  scale: 1.1;
+}
+
+.productContainer{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1.2rem;
+  width: 80%;
+  height: 820px;
+  margin: auto;
+}
+@media (max-width: 1500px){
+  .productContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.1rem;
+    height: 1210px;
+  }
+}
+@media (max-width: 1300px){
+  .productContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+    height: 1650px;
+  }
+}
+@media (max-width: 1000px){
+  .productContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.1rem;
+    height: 2060px;
+  }
+}
+.imgContainer{
+  line-height: 10px;
+}
+.imgContainer img{
+  margin-bottom: 20px;
+}
+.imgContainer h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+.imgContainer h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.imgContainer span{
+  text-decoration: line-through;
+  margin-right: 5px;
+  color: rgb(136, 136, 136);
+}
+.imgContainer p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+.imgContainer i{
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+.productContainer{
+  margin-bottom: 50px;
+}
+
+.specialEditoionContainer img{
+  width: 100%;
+}
+
+.footDecIcon{
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+}
+.footDecIconContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.footDecIcon i{
+  font-size: 30px;
+}
+.decIconContainer h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200px;
+}
+.decIconContainer p{
+  font-size: 15px;
+}
+@media (max-width: 1400px){
+  .footDecIcon i{
+    font-size: 20px;
+  }
+  .decIconContainer h2{
+    font-size: 20px;
+  }
+  .decIconContainer p{
+    font-size: 12px;
+  }
+}
+@media (max-width: 1100px){
+  .footDecIconContainer{
+    width: 90%;
+  }
+}
+
+.footerdisc h1{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+@media (max-width: 1400px){
+  .footerdisc h1{
+    font-size: 20px;
+  }
+}
+
+.footerLink{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  border-top: 2px solid rgb(218, 216, 216) ;
+  margin-top: 60px;
+}
+.footerContainer{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footerContainer h1{
+  font-size: 30px;
+}
+.footerContainer h2{
+  font-size: 18px;
+  text-align: center;
+}
+.footerContainer li{
+  font-size: 14px;
+  margin-left: -40px;
+}
+.footerContainer input{
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-bottom: 2px solid rgb(150, 150, 150);
+  padding: 10px 0px;
+}
+.footerContainer button{
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  margin-left: 20px;
+  background-color: rgb(16, 172, 138);
+}
+.footerContainer button:hover{
+  background-color: rgb(8, 209, 166);
+}
+@media (max-width:1115px){
+  #emailFooter{
+    display: none;
+  } 
+}
+
+#womenContainer {
+  padding-top: 150px;
+  height: 720px;
+}
+@media (max-width: 1800px){
+  #womenContainer{
+    height: 720px;
+  }
+}
+@media (max-width: 1300px){
+  #womenContainer{
+    height: 1070px;
+  }
+}
+@media (max-width: 1000px){
+  #womenContainer{
+    height: 1460px;
+  }
+}
+
+#menCollection{
+  padding-top: 150px;
+  height: 1200px;
+}
+@media (max-width: 1800px){
+  #menCollection{
+    height: 1100px;
+  }
+}
+@media (max-width: 1500px){
+  #menCollection{
+    height: 1470px;
+  }
+}
+@media (max-width: 1296px){
+  #menCollection{
+    height: 1860px;
+  }
+}
+@media (max-width: 1000px){
+  #menCollection{
+    height: 3060px;
+  }
+}
+
+.img{
+  background-image: url(generative-ai-cloth-store-aesthetic-background-of-clothes-hanging-on-hangers-muted-neutral-colors-photo.jpg);
+  width: 80%;
+  height: 700px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.aboutUslinks{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  align-items: center;
+}
+.aboutUslinks .head{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+.aboutUslinks .links ul{
+  display: flex;
+}
+.aboutUslinks .links li{
+  padding: 0px 10px;
+  text-transform: capitalize;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.aboutImageContainer h1{
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: cursive;
+  font-size: 60px;
+  font-weight: lighter;
+}
+.aboutUsFooterText{
+  display: flex;
+  justify-content: space-around;
+  min-width: 700px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 15px;
+}
+.aboutUsFooterText .boldAboutText{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+.aboutUsFooterText .paraAboutText{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 4px;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+#accessoriesContaier{
+  padding-top: 150px;
+  height: 1110px;
+}
+@media (max-width: 1800px){
+  #accessoriesContaier{
+    height: 1100px;
+  }
+}
+@media (max-width: 1500px){
+  #accessoriesContaier{
+    height: 1470px;
+  }
+}
+@media (max-width: 1296px){
+  #accessoriesContaier{
+    height: 1860px;
+  }
+}
+@media (max-width: 1000px){
+  #accessoriesContaier{
+    height: 3060px;
+  }
+}
+
+#evrythingContainer{
+  padding-top: 150px;
+  height: 100%;
+}
+
+.headerImg{
+  width: 80%;
+  margin: auto;
+}
+.headerImg img{
+  width: 100%;
+  margin-top: 20px;
+}
+
+#tankTopContainer{
+  margin-top: 100px;
+}
+
+.eyeWearContainer img{
+  margin-top: 50px;
+  width: 100%;
+}
+.eyeWearContainer{
+  width: 90%;
+  margin: auto;
+}
+
+.sendalCollection img{
+  width: 100%;
+}
+.sendalCollection{
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#eyewearCollection{
+  margin-top: 100px;
+}
+
+.cartContent{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+}
+.cartContainer{
+  padding-top: 100px;
+}
+.cartContainer img{
+  width: 300px;
+}
+.cartContainer .cartMain img{
+  box-shadow: 0px 0px 5px rgb(129, 129, 129);
+  width: 400px;
+  margin-bottom: 40px;
+}
+.cartContainer .cartGrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.cartContainer .cartGrid img{
+  box-shadow: 0px 0px 5px rgb(150, 150, 150);
+  width: 195px;
+}
+
+.cartContainer .cartTextContainer{
+  position: relative;
+  padding-left: 30px;
+  padding-right: 10px;
+  width: 100%;
+  line-height: 30px;
+}
+.cartTextContainer h1{
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.cartTextContainer h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+.cartTextContainer h2 span{
+  text-decoration: line-through;
+  margin-right: 15px;
+}
+.cartTextContainer p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: rgb(44, 44, 44);
+}
+.cartTextContainer .addToCartBtn{
+  padding: 4px 20px;
+  margin-right: 10px;
+  border-radius: 200px;
+  border: 1px solid black;
+  background-color: white;
+}
+.cartTextContainer .soldBtn{
+  padding: 4px 20px;
+  margin-right: 10px;
+  border-radius: 200px;
+  color: white;
+  border: 1px solid rgb(0, 143, 187);
+  background-color: rgb(0, 143, 187);
+}
+.cartTextContainer .soldBtn:hover{
+  border: 1px solid rgb(19, 175, 223);
+  background-color: rgb(19, 175, 223); 
+}
+.preOrder{
+  text-decoration: underline;
+  margin-bottom: 25px;
+}
+
+.wrapper{
+  border: none;
+  width: 450px;
+  border-top: 1px solid black;
+}
+#lastBtn{
+  border-bottom: 1px solid black;
+}
+.wrapper button{
+  width: 100%;
+  border: none;
+  height: 40px;
+  background-color: transparent;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+.wrapper .content{
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  padding: 0px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 25px;
+}
